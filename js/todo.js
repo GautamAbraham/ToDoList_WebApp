@@ -8,7 +8,7 @@ $(document).ready(function () {
             '<input type="checkbox">' +
             '</div><div class="col-md-auto">' +
             it.title +
-            "</div>"
+            '</div></div>'
         ).appendTo("#task");
       }
     });
@@ -22,6 +22,7 @@ $(document).ready(function () {
       task.addClass("strikeout");
       count++;
     }
+    // count alert
     if (count % 5 == 0)
       alert("Congrats. " + count + " Tasks have been Successfully Completed");
   });
