@@ -12,6 +12,13 @@
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
       crossorigin="anonymous"
     />
+    <!-- custom css -->
+    <style>
+      .strikeout {
+        text-decoration: line-through;
+        color: #198754;
+      }
+    </style>
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
@@ -19,7 +26,7 @@
     <!-- nav -->
     <nav class="navbar navbar-dark bg-primary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">ToDo Web-App</a>
+        <a class="navbar-brand" href="home.html">ToDo Web-App</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -33,9 +40,6 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="home.html">Home</a>
-            </li>
             <li class="nav-item active">
               <a class="nav-link active" aria-current="page" href="todo.html"
                 >ToDo List</a
@@ -49,8 +53,9 @@
       </div>
     </nav>
     <!-- end of nav -->
+    <h1 class="display-3 text-center">Tasks</h1>
     <!-- start of toDo list -->
-    <div id="tasks"></div>
+    <div class="container-fluid" id="task"></div>
     <!-- end of list -->
   </body>
   <script
